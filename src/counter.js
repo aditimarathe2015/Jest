@@ -6,8 +6,8 @@ import React, { useState } from 'react'
 
     return (
         <div>
-          <p>You clicked {count} times</p>
-          <button onClick={() => setCount(count + 1)}>
+          <div  data-test="counter-display" >You clicked {count} times</div>
+          <button data-test="increment-button" onClick={() => setCount(count + 1)}>
             Click me
           </button>
         </div>
